@@ -72,7 +72,7 @@ function minutes_draw(){
 function hours_draw(){
 	context.beginPath();
     context.lineWidth = 4;
-    context.strokeStyle = "black";
+    context.strokeStyle = "green";
 
     context.moveTo(150, 150);
     context.lineTo(150 + 90*Math.cos(Math.PI/2 - t_hours*(Math.PI/180)),
