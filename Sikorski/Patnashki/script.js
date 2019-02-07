@@ -1,5 +1,5 @@
 let tiles = [];
-let freeCell = {y: 3, x: 3};
+let freeCell = {y: 4, x: 4};
 let shuffled = false;
 
 function createCellNull() {
@@ -19,8 +19,8 @@ function appendCell(cell) {
 }
 
 function createField() {
-     for(let y = 0; y < 4; ++y) {
-         for(let x = 0; x < 4; ++x) {
+     for(let y = 0; y < 5; ++y) {
+         for(let x = 0; x < 5; ++x) {
 			 let cell = createCellNull();
 			 cell.y = y;
 			 cell.x = x;
@@ -37,11 +37,11 @@ function createCellTile() {
 }
 
 function createTiles() {
-	for(let y = 0; y < 4; ++y) {
-		 for(let x = 0; x < 4; ++x) {
- 			let n = y * 4 + x + 1;
+	for(let y = 0; y < 5; ++y) {
+		 for(let x = 0; x < 5; ++x) {
+ 			let n = y * 5 + x + 1;
 /* Всего костяшек должно быть 15. */
-               if(n < 16) {
+               if(n < 25) {
                let cell = createCellTile();
                cell.y = y;
                cell.x = x;
@@ -61,7 +61,7 @@ function between(a, b, t) {
 
 function checkVictory() {
    for(let i = 0; i < tiles.length; ++i) {
-       let n = tiles[i].y * 4 + tiles[i].x + 1;
+       let n = tiles[i].y * 5 + tiles[i].x + 1;
 /*  нестрогое сравнение, так как строка */
        if(tiles[i].innerHTML != n) return;
                        }
