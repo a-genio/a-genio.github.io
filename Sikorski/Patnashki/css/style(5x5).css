@@ -4,10 +4,34 @@ html, body {
  }
 
  body {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
 	 font-family: Arial;
+ }
+
+ #container1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 15px;
+ }
+
+button {
+	height: 55px;
+	width: 55px;
+	padding: 5px;
+
+	font-size: 1.5em;
+}
+
+a {
+	margin-left: 40px;
+    margin-right: 40px;
+}
+
+ #container2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
  }
 
 h1 {
