@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 0;
+}
+
+#conteiner1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pole {
+    margin: 15px;
+}
