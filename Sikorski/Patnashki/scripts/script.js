@@ -7,9 +7,9 @@ $('#conteiner3 :checkbox').change(function() {
         } else {
             if (this.id == "svet3") {
                 $('#conteiner3 :checkbox:not(#svet3)').prop("checked", false);
-        }
+            }
            }
-    }
+        }
 });
 
 $("input").on("click", function() {
@@ -28,4 +28,15 @@ $("input").on("click", function() {
             };
         };
     };
-})
+});
+
+$("#btn").on("click", function() {
+    if($("#svet1").prop("checked") == false) { 
+        if($("#svet2").prop("checked") == false) {
+            if($("#svet3").prop("checked") == false) {
+                $("a").attr("href", "")
+                window.alert("Цвет поля должен быть выбран!");
+            };
+        };
+    };
+});
