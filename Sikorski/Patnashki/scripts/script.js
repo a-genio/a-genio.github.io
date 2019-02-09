@@ -13,22 +13,55 @@ $('#conteiner3 :checkbox').change(function() {
 });
 
 $("input").on("click", function() {
-    var s = document.getElementById("pole1"),
-        m = document.getElementById("pole2"),
-        b = document.getElementById("pole3");
 
-    if(s.checked == true) {
-        $("a").attr("href", "index(3x3).html")
-    } else {
-        if(m.checked == true) {
-            $("a").attr("href", "index(4x4).html")
+    if($("#pole1").prop("checked") == true) {
+        if($("#svet1").prop("checked") == true) {
+            $("a").attr("href", "pole/RED/index(3x3).html")
+        }
+
+        if($("#svet2").prop("checked") == true) {
+            $("a").attr("href", "pole/VIOLET/index(3x3).html")
+        
+        }
+
+        if($("#svet3").prop("checked") == true) {
+              $("a").attr("href", "pole/BLUE/index(3x3).html")
+            
+            }
         } else {
-            if(b.checked == true) {
-                $("a").attr("href", "index(5x5).html")
-            };
-        };
-    };
-});
+            if($("#pole2").prop("checked") == true) {
+                if($("#svet1").prop("checked") == true) {
+                    $("a").attr("href", "pole/RED/index(4x4).html")
+                }
+        
+                if($("#svet2").prop("checked") == true) {
+                    $("a").attr("href", "pole/VIOLET/index(4x4).html")
+                
+                }
+        
+                if($("#svet3").prop("checked") == true) {
+                      $("a").attr("href", "pole/BLUE/index(4x4).html")
+                    
+                    }
+            } else {
+                if($("#pole3").prop("checked") == true) {
+                    if($("#svet1").prop("checked") == true) {
+                        $("a").attr("href", "pole/RED/index(5x5).html")
+                    }
+            
+                    if($("#svet2").prop("checked") == true) {
+                        $("a").attr("href", "pole/VIOLET/index(5x5).html")
+                    
+                    }
+            
+                    if($("#svet3").prop("checked") == true) {
+                          $("a").attr("href", "pole/BLUE/index(5x5).html")
+                        
+                        }
+                    }
+                }
+            }
+        })
 
 $("#btn").on("click", function() {
     if($("#svet1").prop("checked") == false) { 
@@ -36,7 +69,7 @@ $("#btn").on("click", function() {
             if($("#svet3").prop("checked") == false) {
                 $("a").attr("href", "")
                 window.alert("Цвет поля должен быть выбран!");
-            };
-        };
-    };
-});
+            }
+        }
+    }
+})
