@@ -1,16 +1,16 @@
 $('#conteiner3 :checkbox').change(function() {
     if (this.id == "svet1") {
-        $('#conteiner3 :checkbox:not(#svet1)').prop("checked", false);
+        $('#conteiner3 :checkbox:not(#svet1)').prop("checked", false)
     } else {
         if (this.id == "svet2") {
-            $('#conteiner3 :checkbox:not(#svet2)').prop("checked", false);
+            $('#conteiner3 :checkbox:not(#svet2)').prop("checked", false)
         } else {
             if (this.id == "svet3") {
-                $('#conteiner3 :checkbox:not(#svet3)').prop("checked", false);
+                $('#conteiner3 :checkbox:not(#svet3)').prop("checked", false)
             }
            }
         }
-});
+})
 
 $("input").on("click", function() {
 
@@ -69,6 +69,17 @@ $("#btn").on("click", function() {
             if($("#svet3").prop("checked") == false) {
                 $("a").attr("href", "")
                 window.alert("Цвет поля должен быть выбран!");
+            }
+        }
+    }
+})
+
+$("#btn").on("click", function() {
+    if($("#pole1").prop("checked") == false) { 
+        if($("#pole2").prop("checked") == false) {
+            if($("#pole3").prop("checked") == false) {
+                $("a").attr("href", "")
+                window.alert("Выберите размер поля!");
             }
         }
     }

@@ -29,6 +29,12 @@ button {
    align-items: center;
 }
 
+#container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
 a {
 	margin-left: 40px;
     margin-right: 40px;
@@ -39,9 +45,9 @@ h1 {
 }
 
 .field {
-    width: 400px;
-    height: 400px;
-    background-color: #9775AA;
+    width: 300px;
+    height: 300px;
+    background-color: #5e78ff;
     border-radius: 5px;
 
     position: relative;
@@ -55,11 +61,11 @@ h1 {
 }
 
 .field__cell--null {
-    background-color: #764B8E;
+    background-color: #2d4fff;
 }
 
 .field__cell--tile {
-    background-color: #3D1255;
+    background-color: #001dba;
     color: white;
     font-size: 42px;
     font-weight: bold;
