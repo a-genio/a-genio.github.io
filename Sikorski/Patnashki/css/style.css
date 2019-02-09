@@ -25,6 +25,20 @@ div {
     align-items: center;
 }
 
+#conteiner3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pole {
-    margin: 15px;
+    margin: 25px;
+}
+
+.svet {
+    margin: 25px;
+}
+
+input {
+    margin-left: 11.5px
 }

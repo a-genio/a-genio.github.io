@@ -6,7 +6,7 @@ function createCellNull() {
 	let cell = document.createElement("div");
     cell.classList.add("field__cell", "field__cell--null");
 	return cell;
-                           }
+}
  function setCellOffset(cell) {
 /* добавление строки  px необходимой для формирования
 корректных свойств CSS. */

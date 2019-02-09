@@ -1,4 +1,16 @@
-
+$('#conteiner3 :checkbox').change(function() {
+    if (this.id == "svet1") {
+        $('#conteiner3 :checkbox:not(#svet1)').prop("checked", false);
+    } else {
+        if (this.id == "svet2") {
+            $('#conteiner3 :checkbox:not(#svet2)').prop("checked", false);
+        } else {
+            if (this.id == "svet3") {
+                $('#conteiner3 :checkbox:not(#svet3)').prop("checked", false);
+        }
+           }
+    }
+});
 
 $("input").on("click", function() {
     var s = document.getElementById("pole1"),
