@@ -36,9 +36,22 @@ div {
 }
 
 .svet {
-    margin: 25px;
+    margin: 12.5px;
+    width: 95px;
 }
 
 input {
-    margin-left: 11.5px
+    margin-left: 11.5px;
+}
+
+.single-checkbox {
+    margin-left: 41px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#btn {
+    margin-top: 10px;
 }
